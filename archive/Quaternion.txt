@@ -1,0 +1,14 @@
+Face + Vertices = Edges + 2
+
+Rx():
+	x=x
+	y=y*cos(θ)-z*sin(θ)
+	z=y*sin(θ)+z*cos(θ)
+Ry(δ):
+	x=x*cos(δ)+z*sin(δ)
+	y=y
+	z=-x*sin(δ)+z*cos(δ)
+
+x=cos(δ)*x+sin(δ)*y
+y=cos(θ)*y+sin(θ)*z
+z=-sin(θ)*y+cos(θ)*z
